@@ -1,0 +1,29 @@
+{
+  "name": "tiny-env",
+  "version": "0.0.2",
+  "description": "Load .env file to js object",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1y/tiny-env.git"
+  },
+  "keywords": [
+    "env"
+  ],
+  "author": "d1y",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d1y/tiny-env/issues"
+  },
+  "homepage": "https://github.com/d1y/tiny-env#readme",
+  "dependencies": {
+    "app-root-path": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/node": "^12.12.7"
+  }
+}
