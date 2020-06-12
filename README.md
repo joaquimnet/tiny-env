@@ -7,7 +7,13 @@ From `dotenv`, just a simple genie for loading `.env` files
 ### Install
 
 ```bash
-npm i --save tiny-env
+npm i joaquimnet/tiny-env
+```
+
+Or if you're using yarn:
+
+```bash
+yarn add joaquimnet/tiny-env
 ```
 
 ### Use
@@ -15,7 +21,19 @@ npm i --save tiny-env
 Will check if there is an `.env` file (or `.env.dev` file) in your project root path
 
 ```js
-const TinyEnv = require('tiny-env')
-const { data: config } = TinyEnv
-module.exports = config
+require('tiny-env')();
+// or
+require('tiny-env')('.env.dev');
+// or
+require('tiny-env')('.env.your_custom_name');
+// or
+require('tiny-env')('../path/to/dot/.env');
 ```
+
+### Tests
+
+Run `yarn test` or `npm run test`
+
+### Thanks
+
+This version of tiny-env was forked from [d1y](https://github.com/d1y/tiny-env)
